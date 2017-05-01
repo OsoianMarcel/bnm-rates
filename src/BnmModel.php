@@ -5,7 +5,7 @@ namespace Osoian\BnmRates;
 /**
  * Class BnmModel
  *
- * @package Main\CoreBundle\Model
+ * @package Osoian\BnmRates
  */
 class BnmModel
 {

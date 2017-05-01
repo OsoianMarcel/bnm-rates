@@ -5,7 +5,7 @@ namespace Osoian\BnmRates;
 /**
  * Class BnmRates
  *
- * @package Main\CoreBundle\Service
+ * @package Osoian\BnmRates
  */
 class BnmRates
 {
