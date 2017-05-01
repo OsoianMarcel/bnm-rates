@@ -1,0 +1,45 @@
+{
+  "name": "osoian/bnm-rates",
+  "description": "Library used to get official exchange rates of National bank of Moldova",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Osoian Marcel",
+	  "email": "osoian.marcel.d@gmail.com"
+	}
+  ],
+  "keywords": [
+	"bnm",
+	"moldova",
+	"bank",
+	"currency",
+	"rates",
+	"national"
+  ],
+  "homepage": "https://github.com/OsoianMarcel/bnm-rates",
+  "config": {
+	"platform": {
+	  "php": "5.5.9"
+	}
+  },
+  "require": {
+	"php": ">=5.5.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+	"psr-4": {
+	  "Osoian\\BnmRates\\": "src/"
+	}
+  },
+  "autoload-dev": {
+	"psr-4": {
+	  "Osoian\\BnmRates\\Tests\\": "tests/"
+	}
+  },
+  "scripts": {
+	"test": "./vendor/bin/phpunit"
+  }
+}
