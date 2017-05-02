@@ -73,7 +73,7 @@ if (!empty($rates)) {
 }
 
 /*
- * What is we need to use specific array key?
+ * What if we need to use specific array key?
  */
 $instance->setAssocClosure(function ($rate) {
 	/**
@@ -133,6 +133,26 @@ if (!empty($rates)) {
 	}
 }
 ```
+
+## For Symfony users
+
+Define the service and set default language (ro)
+
+```yaml
+osoian.bnm_rates:
+        class: Osoian\BnmRates\BnmRates
+        calls:
+            - [ setLocale, ['ro'] ]
+```
+
+Now you can call it
+
+```php
+$this->get('main_core.bnm_rates')
+	->setDate(new \DateTime('yesterday'))
+	->getOne('EUR', true); // float(20.9869)
+```
+
 
 ## Testing
 
