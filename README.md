@@ -1,5 +1,5 @@
 # bnm-rates
-PHP library used to get official exchange rates of National bank of Moldova
+PHP library used to get official exchange rates of National bank of Moldova.
 
 [![Build Status](https://travis-ci.org/OsoianMarcel/bnm-rates.svg?branch=master)](https://travis-ci.org/OsoianMarcel/bnm-rates)
 [![Latest Stable Version](https://poser.pugx.org/osoian/bnm-rates/v/stable)](https://packagist.org/packages/osoian/bnm-rates)
@@ -62,7 +62,7 @@ if (!empty($rates)) {
 }
 
 /*
- * What is we want to use assoc array?
+ * What if we want to use assoc array?
  */
 $instance->setAssocResult(true);
 $rates = $instance->getMultiple(['EUR', 'USD', 'RON']);
@@ -136,16 +136,16 @@ if (!empty($rates)) {
 
 ## For Symfony users
 
-Define the service and set default language (ro)
+Define the service and set default language (ro):
 
 ```yaml
 osoian.bnm_rates:
         class: Osoian\BnmRates\BnmRates
         calls:
-            - [ setLocale, ['ro'] ]
+            - [ setLocale, ['ro'] ] # Optional config
 ```
 
-Now you can call it
+Now you can call it:
 
 ```php
 $this->get('main_core.bnm_rates')
