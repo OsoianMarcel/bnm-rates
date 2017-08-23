@@ -148,7 +148,7 @@ osoian.bnm_rates:
 Now you can call it:
 
 ```php
-$this->get('main_core.bnm_rates')
+$this->get('osoian.bnm_rates')
 	->setDate(new \DateTime('yesterday'))
 	->getOne('EUR', true); // float(20.9869)
 ```
