@@ -1,12 +1,10 @@
 # bnm-rates
 PHP library used to get official exchange rates of National bank of Moldova.
 
-[![Build Status](https://travis-ci.org/OsoianMarcel/bnm-rates.svg?branch=master)](https://travis-ci.org/OsoianMarcel/bnm-rates)
+[![Build Status](https://app.travis-ci.com/OsoianMarcel/bnm-rates.svg?branch=master)](https://app.travis-ci.com/OsoianMarcel/bnm-rates)
 [![Latest Stable Version](https://poser.pugx.org/osoian/bnm-rates/v/stable)](https://packagist.org/packages/osoian/bnm-rates)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.5.9-8892BF.svg)](https://php.net/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/OsoianMarcel/bnm-rates/blob/master/LICENSE)
-
-[2021-01-25] The library is still up to date.
 
 ## Installation
 
